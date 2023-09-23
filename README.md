@@ -7,3 +7,6 @@ $cert = New-SelfSignedCertificate -DNSName "www.domain.com" -CertStoreLocation C
 
 # digital-sign
 signtool sign /f "c:\codesigningcertificate\digicert_certificate\codesigningscertificate.pfx" /p “yourpasswordhere” /tr http://timestamp.digicert.com /td SHA256 /fd SHA256 "c:\codesigningcertificate\myexecutable.exe"
+
+example:
+signtool sign /f "E:\certificate\vaibhav-self-sign.pfx" /p "Type-your-password" /tr http://timestamp.digicert.com /td SHA256 /fd SHA256 "C:\turtle.exe"
